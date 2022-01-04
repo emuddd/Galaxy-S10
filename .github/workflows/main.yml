@@ -15,7 +15,7 @@ jobs:
     - name: Kernel Configure
       run: |
         set -e -o pipefail
-        ./cruelbuild config                    \
+        ./ts-build-arter97-aosp config                    \
                      model=${{ matrix.model }} \
                      name="Cruel-V3.9"         \
                      toolchain=$TOOLCHAIN      \
