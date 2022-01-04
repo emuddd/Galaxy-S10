@@ -23,7 +23,6 @@ jobs:
                      name="Cruel-V3.9"         \
                      toolchain=$TOOLCHAIN      \
                      +magisk                   \
-                     +nohardening              \
                      +ttl                      \
                      +wireguard                \
                      +cifs                     \
