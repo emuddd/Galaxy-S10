@@ -32,7 +32,7 @@ jobs:
       if: env.TOOLCHAIN != 'system-gcc' && env.TOOLCHAIN != 'system-clang'
       run: git clone --depth 1 -j $(nproc) --branch $TOOLCHAIN --single-branch https://github.com/CruelKernel/samsung-exynos9820-toolchain toolchain
     - name: Kernel Build
-      run: ./cruelbuild :build
+      run: ./build :build
     - name: Install mkbootimg
       run: |
         wget -q https://android.googlesource.com/platform/system/tools/mkbootimg/+archive/refs/heads/master.tar.gz -O - | tar xzf - mkbootimg.py
