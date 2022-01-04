@@ -596,8 +596,6 @@ if __name__ == '__main__':
             if not os.path.exists(objtree + '/.config'):
                 make_config(configs, model)
 
-            if configs['kernel']['magisk']['enabled']:
-                update_magisk(configs['kernel']['magisk'].get('version'))
             build(compiler, objtree)
             if not single_model:
                 os.remove(objtree + '/.config')
