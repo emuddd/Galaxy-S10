@@ -49,17 +49,7 @@ jobs:
       run: |
         ./build config                   \
                 model=${{ matrix.model}} \
-                name="CRUEL-V3.4"        \
-                +magisk                  \
-                +nohardening             \
-                +ttl                     \
-                +wireguard               \
-                +cifs                    \
-                +sdfat                   \
-                +ntfs                    \
-                +morosound               \
-                +boeffla_wl_blocker      \
-                +ts_config               \
+                name="CRUEL-V3.4"        \ 
         2>&1 | tee config.info
     - name: Kernel Build
       run: ./build :build
